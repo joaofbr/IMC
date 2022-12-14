@@ -27,13 +27,13 @@ function situacaoImc(altura, peso) {
     let imc = calculaImc(altura, peso)
     if (imc < 18.5) {
         imc = 'ABAIXO DO PESO'
-    } else if ((imc >= 18.5) && (imc <= 24.9)) {
+    } else if ((imc >= 18.5) && (imc < 25)) {
         imc = 'NO PESO IDEAL'
-    } else if ((imc >= 25) && (imc <= 29.9)) {
+    } else if ((imc >= 25) && (imc < 30)) {
         imc = 'ACIMA DO PESO'
-    } else if ((imc >= 30) && (imc <= 34.9)) {
+    } else if ((imc >= 30) && (imc < 35)) {
         imc = 'COM OBESIDADE GRAU I'
-    } else if ((imc >= 35) && (imc <= 39.9)) {
+    } else if ((imc >= 35) && (imc < 40)) {
         imc = 'COM OBESIDADE GRAU II'
     } else if (imc >= 40) {
         imc = 'COM OBESIDADE GRAU III'
